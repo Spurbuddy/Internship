@@ -2,7 +2,176 @@
 
 *,body{
 	font-family: 'Quicksand', sans-serif;
+	/*border : 1px solid black*/;
+
 }
 section {
 	margin : 0 !important;
+	width: 100%
+}
+
+/********* PRODUCTS *************/
+#products{
+	
+	padding : 13px;
+	text-align : center;
+	background-image: linear-gradient( 111.3deg,  rgba(238,237,237,1) 62.1%, rgba(191,207,248,1) 93.5% );
+	border-bottom-right-radius: 200px;
+	border-top-left-radius: 200px;
+
+}
+#products p.tagline{
+	font-size : 30px;
+	
+	font-weight : bold;
+}
+
+#products span.tagUnder {
+	font-size: 20px;
+
+}
+#products .row {
+
+margin-top : 5%;
+
+}
+
+#products .row .circle{
+/*	background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 80%, #2AF598 100%);*/
+background-color: lightblue;
+padding : 30px;
+border-radius : 70%;
+height : 300px;
+width: 300px;
+
+	
+}
+#products .row .col-md-5{
+	border-right : 1px solid black
+}
+#products .row .col-md-4{
+	
+	color : black;
+	word-spacing: 7px;
+	font-size: 20px;
+	padding : 20px;
+	text-align: justify;
+	font-weight: 300;
+
+}
+#products .row .col-md-6{
+	min-width : 10vh;
+}
+#products .row .col-md-3{
+
+}
+.circle-title{
+	font-weight : bold;
+	font-size : 50px;
+	margin-top : 5%;
+}
+.circle-content{
+	font-size: 18px
+}
+#see_more_products:hover{
+	color: green;
+	cursor : pointer;
+}
+#see_more_text{
+	font-weight : bold;
+	background-color: black;
+	color : white;
+	text-align: center;
+	padding : 6px;
+
+}
+.visible{
+	display: block
+}
+.invisible{
+	display: none
+}
+/****************** Company Overall ***************/
+
+/* The Overlay (background) */
+.c_overlay {
+  /* Height & width depends on how you want to reveal the overlay*/   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.c_overlay-content {
+  position: relative;
+  
+  width: 100%; /* 100% width */
+  
+  margin-top : 40px;
+  color : white;
+}
+
+/* The navigation links inside the overlay */
+.c_overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.c_overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.c_overlay .closebtn {
+  
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .c_overlay a {font-size: 200%}
+  .c_overlay .closebtn {
+    font-size: 400px;
+    top: 15px;
+    right: 35px;
+  }
+  .c_overlay-content .row{
+	
+	text-align: justify;
+	padding : 5px;
+	
+
+	
+}
+/* Switch between mobile and pc view for product overlay button */
+@media only screen and (max-width: 600px){
+	.pcViewProduct{
+		display : none;
+	}
+	.mobileViewProduct{
+		display: block
+	}
+}
+
+}
+.c_overlay-content .row{
+	
+	text-align: justify;
+	padding : 5px;
+	
 }
