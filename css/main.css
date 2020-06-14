@@ -20,20 +20,20 @@ section {
 
 
 }
-@media screen and (max-width : 768){
+@media screen and (max-width : 768px){
 	#products p.tagline{
-	font-size : 25px;
+	font-size : 40px;
 	font-weight : bold;
 }
 
 #products span.tagUnder {
-	font-size: 14px;
+	font-size: 19px;
 	padding: 10px;
 
 }
 
 }
-@media screen and (min-width : 769){
+@media screen and (min-width : 769px){
 	#products p.tagline{
 		font-weight : bold;
 	font-size : 50px;
@@ -41,7 +41,7 @@ section {
 }
 
 #products span.tagUnder {
-	font-size: 35px;
+	font-size: 26px;
 	padding: 10px;
 	font-weight : 400px;
 
