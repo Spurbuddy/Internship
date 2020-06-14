@@ -20,15 +20,32 @@ section {
 
 
 }
-#products p.tagline{
-	font-size : 50px;
-	
+@media screen and (max-width : 768){
+	#products p.tagline{
+	font-size : 25px;
 	font-weight : bold;
 }
 
 #products span.tagUnder {
-	font-size: 30px;
-	padding: 10px
+	font-size: 14px;
+	padding: 10px;
+
+}
+
+}
+@media screen and (min-width : 769){
+	#products p.tagline{
+		font-weight : bold;
+	font-size : 50px;
+	
+}
+
+#products span.tagUnder {
+	font-size: 35px;
+	padding: 10px;
+	font-weight : 400px;
+
+}
 
 }
 .product-name{
