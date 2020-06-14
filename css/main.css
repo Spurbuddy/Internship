@@ -2,6 +2,7 @@
 
 *,body{
 	font-family: 'Quicksand', sans-serif;
+
 	/*border : 1px solid black*/;
 
 }
@@ -15,87 +16,81 @@ section {
 	
 	padding : 13px;
 	text-align : center;
-	background-image: linear-gradient( 111.3deg,  rgba(238,237,237,1) 62.1%, rgba(191,207,248,1) 93.5% );
-	border-bottom-right-radius: 200px;
-	border-top-left-radius: 200px;
+
 
 }
 #products p.tagline{
-	font-size : 30px;
+	font-size : 50px;
 	
 	font-weight : bold;
 }
 
 #products span.tagUnder {
-	font-size: 20px;
+	font-size: 30px;
+	padding: 10px
 
 }
-#products .row {
+.product-name{
+	font-size: 50px;
+	padding : 10px;
+	margin-top : 20px;
 
-margin-top : 5%;
-
-}
-
-#products .row .circle{
-/*	background-color: #08AEEA;
-background-image: linear-gradient(0deg, #08AEEA 80%, #2AF598 100%);*/
-background-color: lightblue;
-padding : 30px;
-border-radius : 70%;
-height : 300px;
-width: 300px;
-
-	
-}
-#products .row .col-md-5{
-	border-right : 1px solid black
-}
-#products .row .col-md-4{
-	
-	color : black;
-	word-spacing: 7px;
-	font-size: 20px;
-	padding : 20px;
-	text-align: justify;
-	font-weight: 300;
 
 }
-#products .row .col-md-6{
-	min-width : 10vh;
+.product-text{
+	font-size: 20px
 }
-#products .row .col-md-3{
+@media screen and (max-width : 768px){
+	.single-product{
+		background: white;
+	}
+}
+@media screen and (min-width: 769px){
+	.single-product{
+	padding: 10px;
+	margin-left : 10%;
+	margin-right : 10%;
+	background : white;
 
 }
-.circle-title{
-	font-weight : bold;
-	font-size : 50px;
-	margin-top : 5%;
+
 }
-.circle-content{
-	font-size: 18px
+
+#products span{
+	padding : 10px;
 }
-#see_more_products:hover{
-	color: green;
+.list-companies .card:hover{
+	background-color: #000;
+	color : #fff;
 	cursor : pointer;
-}
-#see_more_text{
-	font-weight : bold;
-	background-color: black;
-	color : white;
-	text-align: center;
-	padding : 6px;
+	margin-right: 0;
 
+	}
+.list-companies{
+	font-size: 50px
 }
-.visible{
-	display: block
-}
-.invisible{
-	display: none
-}
-/****************** Company Overall ***************/
 
+.ctext{
+	position : relative;
+	font-size : 40px;
+	
+	
+}
+.ctext:after{
+	content: "";
+	position : absolute;
+	border-top : 5px solid;
+	background-color: #f3f3f3;
+	height : 0px;
+	
+	bottom : -10px;
+	left : 45%;
+	width : 10%;
+	
+}
+/**************** COMPANY OVERLAY CSS ********************/
 /* The Overlay (background) */
-.c_overlay {
+.overlay {
   /* Height & width depends on how you want to reveal the overlay*/   
   height: 100%;
   width: 0;
@@ -110,17 +105,16 @@ width: 300px;
 }
 
 /* Position the content inside the overlay */
-.c_overlay-content {
+.overlay-content {
   position: relative;
   
   width: 100%; /* 100% width */
-  
   margin-top : 40px;
   color : white;
 }
 
 /* The navigation links inside the overlay */
-.c_overlay a {
+.overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -130,12 +124,12 @@ width: 300px;
 }
 
 /* When you mouse over the navigation links, change their color */
-.c_overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
-.c_overlay .closebtn {
+.overlay .closebtn {
   
   top: 20px;
   right: 45px;
@@ -144,34 +138,32 @@ width: 300px;
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .c_overlay a {font-size: 200%}
-  .c_overlay .closebtn {
-    font-size: 400px;
+  .overlay a {font-size: 200%}
+  .overlay .closebtn {
+    font-size: 100px;
     top: 15px;
     right: 35px;
   }
-  .c_overlay-content .row{
-	
-	text-align: justify;
-	padding : 5px;
-	
-
-	
-}
-/* Switch between mobile and pc view for product overlay button */
-@media only screen and (max-width: 600px){
-	.pcViewProduct{
-		display : none;
-	}
-	.mobileViewProduct{
-		display: block
-	}
-}
 
 }
-.c_overlay-content .row{
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: red; }
+    60%{    color: #000; }
+    99%{    color:#000;  }
+    100%{   color: red;    }
+}
+.company-intro{
+	background-color: #1d1d1f;
+	padding : 20px;
+	color : white;
+	text-align: center;
 	
-	text-align: justify;
-	padding : 5px;
-	
+}
+.company-intro p{
+	font-size: 60px;
 }
