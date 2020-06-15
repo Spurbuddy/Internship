@@ -1,16 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 
-* {
-	font-family: 'Quicksand', sans-serif;
-	/*border : 1px solid black*/;
 
+
+*,body{
+
+  font-family: 'Quicksand', sans-serif;
+	
 }
+
+/* Nav-header start */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center scroll;
+    -webkit-background-size: cover  ;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 230px;
+}
+
+.carousel-caption h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: ;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.navbar-nav a {
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+/* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff !important;
+} */
+
+.w-100 {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        background: rgb(0, 0, 0, 0.2);
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+
+    .carousel-caption h2 {
+        font-size: 25px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .carousel-caption p {
+        width: 80%;
+        
+    }
+}
+
 
 body {
 	margin: 0;
 	padding: 0;
 }
+
+/* End of nav-header */
+
+
 
 section {
 	margin : 0 !important;
@@ -22,87 +120,107 @@ section {
 	
 	padding : 13px;
 	text-align : center;
-	background-image: linear-gradient( 111.3deg,  rgba(238,237,237,1) 62.1%, rgba(191,207,248,1) 93.5% );
-	border-bottom-right-radius: 200px;
-	border-top-left-radius: 200px;
+
+  color : white;
+	background-image: url('https://cdn.shopify.com/s/files/1/0066/9050/4822/files/About-NU-3_1000x.jpg?v=1568688747'); /*linear-gradient( 121.5deg,  rgba(249,249,249,1) 66.3%, #bbb 94.1% );*/
+  background-size : cover;
+
+
 
 }
-#products p.tagline{
-	font-size : 30px;
-	
+@media screen and (max-width : 768px){
+	#products p.tagline{
+	font-size : 40px;
 	font-weight : bold;
 }
 
 #products span.tagUnder {
-	font-size: 20px;
-
-}
-#products .row {
-
-margin-top : 5%;
+	font-size: 19px;
+	padding: 10px;
 
 }
 
-#products .row .circle{
-/*	background-color: #08AEEA;
-background-image: linear-gradient(0deg, #08AEEA 80%, #2AF598 100%);*/
-background-color: lightblue;
-padding : 30px;
-border-radius : 70%;
-height : 300px;
-width: 300px;
-
-	
 }
-#products .row .col-md-5{
-	border-right : 1px solid black
-}
-#products .row .col-md-4{
-	
-	color : black;
-	word-spacing: 7px;
-	font-size: 20px;
-	padding : 20px;
-	text-align: justify;
-	font-weight: 300;
-
-}
-#products .row .col-md-6{
-	min-width : 10vh;
-}
-#products .row .col-md-3{
-
-}
-.circle-title{
-	font-weight : bold;
+@media screen and (min-width : 769px){
+	#products p.tagline{
+		font-weight : bold;
 	font-size : 50px;
-	margin-top : 5%;
+	
 }
-.circle-content{
-	font-size: 18px
+
+#products span.tagUnder {
+	font-size: 26px;
+	padding: 10px;
+	font-weight : 400px;
+
 }
-#see_more_products:hover{
-	color: green;
+
+}
+.product-name{
+	font-size: 50px;
+	padding : 10px;
+	margin-top : 20px;
+
+
+}
+.product-text{
+	font-size: 20px
+}
+@media screen and (max-width : 768px){
+	.single-product{
+		
+    background : #FFFFF0;
+  color : black;
+  padding : 10px;
+	}
+}
+@media screen and (min-width: 769px){
+	.single-product{
+	padding: 10px;
+	margin-left : 10%;
+	margin-right : 10%;
+	background : #FFFAFA;
+  color : black;
+
+}
+
+}
+
+#products span{
+	padding : 10px;
+}
+.list-companies .card:hover{
+	background-color: #000;
+	color : #fff;
 	cursor : pointer;
-}
-#see_more_text{
-	font-weight : bold;
-	background-color: black;
-	color : white;
-	text-align: center;
-	padding : 6px;
+	margin-right: 0;
 
+	}
+.list-companies{
+	font-size: 50px
 }
-.visible{
-	display: block
-}
-.invisible{
-	display: none
-}
-/****************** Company Overall ***************/
 
+.ctext{
+	position : relative;
+	font-size : 40px;
+	
+	
+}
+.ctext:after{
+	content: "";
+	position : absolute;
+	border-top : 5px solid;
+	background-color: #f3f3f3;
+	height : 0px;
+	
+	bottom : -10px;
+	left : 45%;
+	width : 10%;
+	
+}
+/**************** COMPANY OVERLAY CSS ********************/
 /* The Overlay (background) */
-.c_overlay {
+.overlay {
   /* Height & width depends on how you want to reveal the overlay*/   
   height: 100%;
   width: 0;
@@ -117,17 +235,16 @@ width: 300px;
 }
 
 /* Position the content inside the overlay */
-.c_overlay-content {
+.overlay-content {
   position: relative;
   
   width: 100%; /* 100% width */
-  
   margin-top : 40px;
   color : white;
 }
 
 /* The navigation links inside the overlay */
-.c_overlay a {
+.overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -137,12 +254,12 @@ width: 300px;
 }
 
 /* When you mouse over the navigation links, change their color */
-.c_overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
-.c_overlay .closebtn {
+.overlay .closebtn {
   
   top: 20px;
   right: 45px;
@@ -151,37 +268,37 @@ width: 300px;
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .c_overlay a {font-size: 200%}
-  .c_overlay .closebtn {
-    font-size: 400px;
+  .overlay a {font-size: 200%}
+  .overlay .closebtn {
+    font-size: 100px;
     top: 15px;
     right: 35px;
   }
-  .c_overlay-content .row{
-	
-	text-align: justify;
-	padding : 5px;
-	
-
-	
-}
-/* Switch between mobile and pc view for product overlay button */
-@media only screen and (max-width: 600px){
-	.pcViewProduct{
-		display : none;
-	}
-	.mobileViewProduct{
-		display: block
-	}
-}
 
 }
-.c_overlay-content .row{
-	
-	text-align: justify;
-	padding : 5px;
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: red; }
+    60%{    color: #000; }
+    99%{    color:#000;  }
+    100%{   color: red;    }
+}
+.company-intro{
+	background-color: #1d1d1f;
+	padding : 20px;
+	color : white;
+	text-align: center;
 	
 }
+.company-intro p{
+	font-size: 60px;
+
+}
+
 
 /* footer */
 
@@ -321,3 +438,42 @@ p {
 .social:not(:last-child) {
     margin-bottom: 15px!important;
 }
+
+
+
+
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#tabs{
+	background: #007b5e;
+    color: #eee;
+}
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
+}
+
