@@ -1,0 +1,26 @@
+@mixin centerize() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-span {
+    text-align: center;
+}
+
+.thick {
+    font-weight: 900;
+}
+
+#marker {
+    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+     
+.mapboxgl-popup {
+    max-width: 200px;
+}
