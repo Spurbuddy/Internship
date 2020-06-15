@@ -307,3 +307,17 @@ p {
     background-color: grey; }
 .footer-social-info a:focus span, .footer-social-info a:hover span {
     color: #ffffff; }          
+
+
+.footer-item {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#ul {
+    padding-left: 0; 
+}
+
+.social:not(:last-child) {
+    margin-bottom: 15px!important;
+}
