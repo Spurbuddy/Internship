@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title> Spurbuddy </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/map.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -54,13 +64,91 @@ Setting the width of a block-level element will prevent it from
 		
 		
 	</section>
-
-	<section id="map">
-		<!-- map -->
+	<section id="map_container">
+		<div id="description">
+			<h2>Where we are</h2>
+			<span class="center-span">
+				SpurBuddy is present in various locations: 
+				<span class="thick">SunnyVale</span>, 
+				<span class="thick">Lagos</span> and 
+				<span class="thick">Lima, Peru</span>
+			</span>
+			</span>
+		</div>
+		<div id="map">
+			<!-- map -->
+		</div>
 	</section>
 
 	<footer id="footer">
 		<!-- footer area -->
+		 <!-- ##### Footer Area Start ##### -->
+		 <footer class="footer-area">
+			<!-- Main Footer Area -->
+			<div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-color: black;">
+			  <div class="container">
+				<div class="row">
+		
+				  <!-- Single Footer Widget Area -->
+				  <div class="col-12 col-sm-6 col-lg-4">
+					<div class="footer-widget mb-80">
+						<div id="firstColumn">
+					  <span class="link"><a href="#" class="foo-logo d-block mb-30"><h3 id="image">SpurBuddy</h3></a></span>
+					  <p>We co-build Beloved organizations with innovative partners.</p>
+								  <div class="contact-info" >
+									<p><i class="fa fa-map-pin" aria-hidden="true"></i><span>Plot 8, Alhj. Raheem Kotundrive. Value Estate. Lekki - Epe Expressway. Lagos</span></p>
+									<p><i class="fa fa-envelope" aria-hidden="true"></i><span>hello@spurbuddy.com</span></p>
+									<p><i class="fa fa-phone" aria-hidden="true"></i><span>+234 703 348 0333</span></p>
+					  </div>
+					</div>
+					</div>
+				  </div>
+		
+				  <!-- Single Footer Widget Area -->
+				  <div class="col-12 col-sm-6 col-lg-4">
+					<div class="footer-widget mb-80">
+						<div id="secondColumn">
+					  <h5 class="widget-title">QUICK LINK</h5>
+					  <!-- Footer Widget Nav -->
+					  <nav class="footer-widget-nav">
+						<ul id="ul">
+						  <li><a href="#">Hustler On Deck</a></li>
+						  <li><a href="#">Builders Foundry</a></li>
+						  <li><a href="#">Innovation Lab</a></li>
+						  <li><a href="#">FAQs</a></li>
+						  <li><a href="#">Blog</a></li>
+						  <li><a href="#">Blog</a></li>
+						</ul>
+					  </nav>
+					</div>
+					</div>
+				  </div>
+		
+				  <!-- Single Footer Widget Area -->
+				  <div class="col-12 col-sm-6 col-lg-4">
+					<div class="footer-widget mb-80">
+					  <h5 class="widget-title">STAY CONNECTED</h5>
+					  <!-- Footer Social Info -->
+					  <div class="footer-social-info">
+						<a href="#">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						  <span>Facebook</span>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+						  <span>Twitter</span>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram" aria-hidden="true"></i>
+						  <span>Instagram</span>
+						</a>
+					  </div>
+					</div>
+				  </div>
+		
+				</div>
+			  </div>
+			</div>
 	</footer>
 
 <!-- The Product Overlay  -->
@@ -185,5 +273,6 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
+	<script src="js/map.js"></script>
 </body>
 </html>
