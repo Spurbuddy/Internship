@@ -452,11 +452,11 @@ p {
 
 
 
-section {
+.what-we-do {
     padding: 60px 0;
 }
 
-section .section-title {
+.what-we-do .Mytitle {
     text-align: center;
     color: #007b5e;
     margin-bottom: 50px;
