@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
 
 *,body{
 	font-family: 'Quicksand', sans-serif;
+	font-family:'Josefin Sans', sans-serif !important;
 }
 
-/* Header Start */
+/* Nav-header start */
 
 .carousel-item {
     height: 100vh;
@@ -34,7 +36,7 @@
 
 .navbar-nav a {
     font-family: poppins;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -93,7 +95,7 @@
         
     }
 }
-/* Header end */
+/* End of nav-header */
 
 
 section {
@@ -110,15 +112,32 @@ section {
 
 
 }
-#products p.tagline{
-	font-size : 50px;
-	
+@media screen and (max-width : 768px){
+	#products p.tagline{
+	font-size : 40px;
 	font-weight : bold;
 }
 
 #products span.tagUnder {
-	font-size: 30px;
-	padding: 10px
+	font-size: 19px;
+	padding: 10px;
+
+}
+
+}
+@media screen and (min-width : 769px){
+	#products p.tagline{
+		font-weight : bold;
+	font-size : 50px;
+	
+}
+
+#products span.tagUnder {
+	font-size: 26px;
+	padding: 10px;
+	font-weight : 400px;
+
+}
 
 }
 .product-name{
