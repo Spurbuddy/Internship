@@ -157,7 +157,7 @@
 
 	
 	 <!--START OF WHAT WE DO SECTION-->
-	<section id="what-we-do" class="scrollAnimate">
+	<section id="what-we-do">
 	<section id="tabs" class="what-we-do">
 		<div class="container">
 			<h6 class="section-title Mytitle h1">WHAT WE DO</h6>
@@ -194,7 +194,7 @@
 	
 	
 	<!-- PRODUCT /COMPANY SECTION -->
-	<section id="products" class="scrollAnimate">
+	<section id="products">
 		<!-- products -->
 		<p class="tagline ctext"> <b>OUR COMPANIES</b></p>
 		<span class="tagUnder mb-2"> Get Awesome digital experience from top notch products</span>
@@ -245,7 +245,7 @@
 		
 	</section>
 	<!-- END OF PRODUCT SECTION-->
-	<section id="map_container" class="scrollAnimate">
+	<section id="map_container">
 		<div id="description">
 			<h2>Where we are</h2>
 			<span class="center-span">
@@ -363,31 +363,8 @@
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./plugins/ResponsiveSlides/responsiveslides.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
-<script>
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.scrollAnimate').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-</script>
+
+
 <script>
   $(function() {
     $(".rslides").responsiveSlides({
