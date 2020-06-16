@@ -225,6 +225,11 @@ section {
 	width : 10%;
 	
 }
+/*************** SCROLL ANIMATE ******************/
+.scrollAnimate
+{
+    opacity:0;
+}
 /**************** COMPANY OVERLAY CSS ********************/
 /* The Overlay (background) */
 .overlay {
