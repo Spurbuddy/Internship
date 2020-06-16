@@ -449,14 +449,13 @@ p {
 }
 
 
+/**************** WHAT WE DO CSS ********************/
 
-
-
-section {
+.what-we-do {
     padding: 60px 0;
 }
 
-section .section-title {
+.what-we-do .Mytitle {
     text-align: center;
     color: #007b5e;
     margin-bottom: 50px;
@@ -485,4 +484,4 @@ section .section-title {
     color: #eee;
     font-size: 20px;
 }
-
+/**************** END OF WHAT WE DO ********************/
