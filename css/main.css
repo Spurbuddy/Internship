@@ -121,6 +121,7 @@ section {
 	padding : 13px;
 	text-align : center;
 
+
   color : white;
 	background-image: url('https://cdn.shopify.com/s/files/1/0066/9050/4822/files/About-NU-3_1000x.jpg?v=1568688747'); /*linear-gradient( 121.5deg,  rgba(249,249,249,1) 66.3%, #bbb 94.1% );*/
   background-size : cover;
@@ -181,6 +182,7 @@ section {
 }
 @media screen and (min-width: 769px){
 	.single-product{
+        
 	padding: 10px;
 	margin-left : 10%;
 	margin-right : 10%;
@@ -291,6 +293,9 @@ section {
     60%{    color: #000; }
     99%{    color:#000;  }
     100%{   color: red;    }
+}
+#company_name,#company_description{
+    color : white;
 }
 .company-intro{
 	background-color: #1d1d1f;
