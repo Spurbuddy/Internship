@@ -218,16 +218,25 @@ section {
 
 
 }
-.product-text{
-	font-size: 20px
-}
+
+
 @media screen and (max-width : 768px){
 	.single-product{
 		
-    background : #FFFFF0;
-  color : black;
+    background : #FFF;
+
+  color : black !important;
   padding : 10px;
+  text-align: center;
 	}
+    .product-text{
+    font-size: 20px;
+    text-align : justify-content;
+     overflow-wrap: break-word;
+    color : black !important;
+
+     
+}
 }
 @media screen and (min-width: 769px){
 	.single-product{
@@ -235,12 +244,23 @@ section {
 	padding: 10px;
 	margin-left : 10%;
 	margin-right : 10%;
-	background : #FFFAFA;
+	background : #FFF;
   color : black;
+  text-align: center;
+
+}
+.product-text{
+    font-size: 35px;
+    text-align : center;
+     overflow-wrap: break-word;
+     margin-left : 12%;
+     margin-right : 12%;
+    color : black !important; 
+}   
+
 
 }
 
-}
 
 #products span{
 	padding : 10px;
