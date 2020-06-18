@@ -224,6 +224,7 @@ section {
 	.single-product{
 		
     background : #FFF;
+
   color : black !important;
   padding : 10px;
   text-align: center;
@@ -243,7 +244,7 @@ section {
 	padding: 10px;
 	margin-left : 10%;
 	margin-right : 10%;
-	background : #fff;
+	background : #FFF;
   color : black;
   text-align: center;
 
