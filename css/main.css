@@ -224,7 +224,7 @@ section {
 @media screen and (max-width : 768px){
 	.single-product{
 		
-    background : #FFFFF0;
+    background : #FFF;
   color : black;
   padding : 10px;
 	}
@@ -235,7 +235,7 @@ section {
 	padding: 10px;
 	margin-left : 10%;
 	margin-right : 10%;
-	background : #FFFAFA;
+	background : #FFF;
   color : black;
 
 }
