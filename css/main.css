@@ -7,50 +7,44 @@
 *,body{
 
   font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
 	
 }
 
-/* Nav-header start */
+/**************** NAV-HEADER ********************/
 
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center scroll;
-    -webkit-background-size: cover  ;
-    background-size: cover;
+/* Navbar color change when scrolling */
+.navbar-light {
+    background: transparent;
 }
 
-.carousel-caption {
-    bottom: 230px;
+.navbar-light.scrolled {
+    transition: 500ms ease;
+    background: black;
 }
+/* --- */
 
-.carousel-caption h2 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: ;
-}
-
-.carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
+nav {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-nav a {
-    font-family: poppins;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
+    /* font-family: poppins; */
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 .navbar-light .navbar-brand {
     color: #fff;
     font-size: 25px;
     text-transform: capitalize;
-    /* font-weight: bold; */
+    padding-top: .6rem;
     letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -61,12 +55,17 @@
     color: #fff;
 }
 
-.navbar-nav {
-    text-align: center;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(38, 202, 231);
 }
 
-.nav-link {
-    padding: .2rem 1rem;
+.navbar-nav {
+    text-align: center;
+    
+}
+
+.nav-item {
+    padding: .6rem 0 .6rem 1rem;
 }
 
 /* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -77,49 +76,154 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 767px) {
+
+.image-div {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center scroll;
+    -webkit-background-size: cover  ;
+    background-size: cover;
+}
+
+.image-text {
+    position: absolute;
+	top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #838181;
+    margin: 0;
+}
+
+.image-text h2 {
+    width: 80%;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* letter-spacing: 2px; */
+}
+
+.image-text p {
+    font-size: 18px;
+    line-height: 1.9;
+    font-style: italic;
+}
+
+.txt-rotate {
+    color: rgb(38, 202, 231);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 768px) {
     .navbar-nav.ml-auto {
-        background: rgb(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0);
+    }
+
+    .navbar {
+        padding: 8px 0 8px 15px;
     }
     .navbar-toggler {
         padding: 1px 5px;
         font-size: 18px;
         line-height: 0.3;
         background: #fff;
+        margin: 0 30px 0 0;
     }
 
-    .carousel-caption h2 {
+    .container {
+        margin: 0;
+    }
+
+    .image-text {
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+
+    }
+    .image-text h2 {
         font-size: 25px;
-        width: 80%;
-        margin: auto;
+        margin: 0 12%;
     }
 
-    .carousel-caption p {
+    .image-text p {
         width: 80%;
+        text-align: center;
+        margin: 0 12%;
         
     }
 }
+/**************** END OF NAV-HEADER ********************/
 
+/**************** WHAT WE DO ********************/
 
-body {
-	margin: 0;
-	padding: 0;
+#what-we-do {
+    padding: 40px 0 30px 0;
+    background: white;
 }
 
-/* End of nav-header */
-
-
-
-section {
-	margin : 0 !important;
-	width: 100%
+#row-container {
+    width: 60%;
+    margin: auto;
 }
+
+#nav-tab {
+    width: 80%;
+    margin: auto;
+}
+
+.what-we-do .Mytitle {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+#tabs{
+    color: black;
+}
+
+.nav-item.show, .nav-tabs .nav-link.active {
+    color: black;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-item.show, .nav-tabs .nav-link {
+    border: none;
+    border-bottom: 1px solid rgb(156, 153, 153)!important;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 20px;
+    color: rgb(156, 153, 153);
+}
+
+.nav-tabs {
+    color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    #row-container {
+        width: 90%;
+        margin: auto;
+    }
+}
+/**************** END OF WHAT WE DO ********************/
+
 
 /********* PRODUCTS *************/
 #products{
 	
 	padding : 13px;
 	text-align : center;
+
 
   color : white;
 	background-image: url('https://cdn.shopify.com/s/files/1/0066/9050/4822/files/About-NU-3_1000x.jpg?v=1568688747'); /*linear-gradient( 121.5deg,  rgba(249,249,249,1) 66.3%, #bbb 94.1% );*/
@@ -132,11 +236,13 @@ section {
 	#products p.tagline{
 	font-size : 40px;
 	font-weight : bold;
+    color : white;
 }
 
 #products span.tagUnder {
 	font-size: 19px;
 	padding: 10px;
+    color : white;
 
 }
 
@@ -145,6 +251,7 @@ section {
 	#products p.tagline{
 		font-weight : bold;
 	font-size : 50px;
+    color : white;
 	
 }
 
@@ -152,6 +259,7 @@ section {
 	font-size: 26px;
 	padding: 10px;
 	font-weight : 400px;
+    color : white;
 
 }
 
@@ -162,29 +270,51 @@ section {
 	margin-top : 20px;
 
 
+
 }
-.product-text{
-	font-size: 20px
-}
+
+
 @media screen and (max-width : 768px){
 	.single-product{
 		
-    background : #FFFFF0;
-  color : black;
+    background : #FFF;
+
+  color : black !important;
   padding : 10px;
+  text-align: center;
 	}
+    .product-text{
+    font-size: 20px;
+    text-align : justify-content;
+     overflow-wrap: break-word;
+    color : black !important;
+
+     
+}
 }
 @media screen and (min-width: 769px){
 	.single-product{
+        
 	padding: 10px;
 	margin-left : 10%;
 	margin-right : 10%;
-	background : #FFFAFA;
+	background : #FFF;
   color : black;
+  text-align: center;
+
+}
+.product-text{
+    font-size: 35px;
+    text-align : center;
+     overflow-wrap: break-word;
+     margin-left : 12%;
+     margin-right : 12%;
+    color : black !important; 
+}   
+
 
 }
 
-}
 
 #products span{
 	padding : 10px;
@@ -218,6 +348,11 @@ section {
 	width : 10%;
 	
 }
+/*************** SCROLL ANIMATE ******************/
+.scrollAnimate
+{
+    opacity:0;
+}
 /**************** COMPANY OVERLAY CSS ********************/
 /* The Overlay (background) */
 .overlay {
@@ -225,7 +360,7 @@ section {
   height: 100%;
   width: 0;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999; /* Sit on top */
   left: 0;
   top: 0;
   background-color: rgb(0,0,0); /* Black fallback color */
@@ -266,6 +401,39 @@ section {
   font-size: 60px;
 }
 
+/* For slides */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 200%}
@@ -287,6 +455,9 @@ section {
     99%{    color:#000;  }
     100%{   color: red;    }
 }
+#company_name,#company_description{
+    color : white;
+}
 .company-intro{
 	background-color: #1d1d1f;
 	padding : 20px;
@@ -295,8 +466,12 @@ section {
 	
 }
 .company-intro p{
-	font-size: 60px;
+	font-size: 60px !important;
 
+}
+.companies p{
+    font-size : 20px;
+    text-align: center;
 }
 
 
@@ -308,16 +483,11 @@ section {
 .footer-widget-nav {
     position: relative;
     z-index: 1; }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#footer h1, h3, h4,h5, h6 {
   color: #303030;
   line-height: 1.3;
   font-weight: 700; }
-p {
+#footer p {
     color: #707070;
     font-size: 13px;
     line-height: 1.7;
@@ -437,43 +607,5 @@ p {
 
 .social:not(:last-child) {
     margin-bottom: 15px!important;
-}
-
-
-
-
-
-section {
-    padding: 60px 0;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-#tabs{
-	background: #007b5e;
-    color: #eee;
-}
-#tabs h6.section-title{
-    color: #eee;
-}
-
-#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #f3f3f3;
-    background-color: transparent;
-    border-color: transparent transparent #f3f3f3;
-    border-bottom: 4px solid !important;
-    font-size: 20px;
-    font-weight: bold;
-}
-#tabs .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
-    color: #eee;
-    font-size: 20px;
 }
 
