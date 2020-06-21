@@ -119,12 +119,16 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        width: 80% !important;
+    }
     .navbar-nav.ml-auto {
         background: rgba(0, 0, 0);
     }
 
     .navbar {
         padding: 8px 0 8px 15px;
+        overflow-x: hidden;
     }
     .navbar-toggler {
         padding: 1px 5px;
@@ -134,9 +138,13 @@ nav {
         margin: 0 30px 0 0;
     }
 
-    .container {
-        margin: 0;
+    .navbar-toggler-icon {
+        /* margin-right: 30px; */
     }
+
+    /* .container-nav {
+        margin: 0;
+    } */
 
     .image-text {
         display: flex;
@@ -177,7 +185,7 @@ nav {
     margin: auto;
 }
 
-.what-we-do .Mytitle {
+ .my-title {
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -210,9 +218,44 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+        padding: 0 !important;
+    }
+
     #row-container {
-        width: 90%;
+        width: 100%;
+
+    }
+
+    .my-title {
+        font-size: 25px;
+        font-weight: bolder !important;
+    }
+
+    .nav-header {
+        display: flex !important;
+        flex-direction: row;
+        /* justify-content: center; */
+        width: 100% !important;
+    }
+
+    #nav-tab {
+        width: 100%;
         margin: auto;
+    }
+
+    .nav-item.show, .nav-tabs .nav-link.active {
+        border-bottom: 5px solid !important;
+        font-size: 25px;
+    }
+
+    .nav-item.show, .nav-tabs .nav-link {
+        font-size: 25px;
+    }
+
+    .tab-content {
+        font-size: 20px;
     }
 }
 /**************** END OF WHAT WE DO ********************/
