@@ -15,20 +15,7 @@
     <!--animation-->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
   
-<<<<<<< HEAD
-  <link rel="stylesheet" href="css/map.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	
-=======
 	<!-- Maps -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-	crossorigin=""/>
-	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
->>>>>>> 3463131fae9b2ac09eeec09702a79afc401d7215
 
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -188,12 +175,55 @@
 		</div>
 		<div id="map">
 			<!-- map -->
-			<img src="img/mapa.png" alt="" usemap="#image-map">
-			<!-- <map name="image-map"> -->
-				<area shape="circle" coords="820,567,523,373" class="hotspot" href="" alt="SunnyVale, California">
-			<!-- </map> -->
+			<img src="img/mapa.png" alt="">
+			<div class="hotspot" id="hotspot-one">
+				<div class="hotspot-cover">
+					<div class="info">
+						<span class="info-span">
+							Lagos, The heart of Africa's tech scene. Lagos has the largest tech hub ecosystem in Africa.
+					</div>
+					<div class="hotspot-animator">
+						<div class="small-circle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="hotspot" id="hotspot-two">
+				<div class="hotspot-cover">
+					<div class="info">
+						<span class="info-span">
+							Lima. The capital of Peru and the focal point of Peru's ever growing tech scene.
+						</span>
+					</div>
+					<div class="hotspot-animator">
+						<div class="small-circle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="hotspot" id="hotspot-three">
+				<div class="hotspot-cover">
+					<div class="info">
+						<span class="info-span">
+							As part of California's high-tech area known as Silicon Valley, Sunnyvale houses many tech companies.
+						</span>
+					</div>
+					<div class="hotspot-animator">
+						<div class="small-circle"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+
+	<div class="teller">
+		<div class="xtop">
+			<div id="mobile-closer">
+				<i class="fas fa-times"></i>		
+			</div>
+		</div>
+		<div class="text">
+			<span id="text"></span>
+		</div>
+	</div>
 
 	<footer id="footer">
 		<!-- footer area -->
@@ -272,8 +302,6 @@
 
    
 <!-- Js file -->
-	<script src="./js/main.js"></script>
-	<script src="js/map.js"></script>
    
 	   <!-- JavaScript Libraries -->
  <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> <script src="lib/jquery/jquery.min.js"></script> 
@@ -298,7 +326,8 @@
 	 
 <!-- Responsive Slides -->
 <script type="text/javascript" src="./plugins/ResponsiveSlides/responsiveslides.min.js"></script>
-
+<script src="./js/main.js"></script>
+<script src="js/map.js"></script>
 
 
 <script>
