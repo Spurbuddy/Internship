@@ -24,3 +24,16 @@
 .mapboxgl-popup {
     max-width: 200px;
 }
+
+$animationStartWidth: 30%;
+
+@keyframes spread-continuous {
+    from {
+        width: $animationStartWidth;
+        height: $animationStartWidth;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
