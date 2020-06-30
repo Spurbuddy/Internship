@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 
 
 
 *,body{
 
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Muli', sans-serif;
   margin: 0;
   padding: 0;
 	
@@ -250,7 +250,7 @@ nav {
         border-bottom: 5px solid !important;
         font-size: 25px;
     }
-
+ 
     .nav-item.show, .nav-tabs .nav-link {
         font-size: 25px;
     }
@@ -263,258 +263,148 @@ nav {
 
 
 /********* PRODUCTS *************/
-#products{
-	
-	padding : 13px;
-    text-align : center; 
-    background-color: black;
-    background-size : cover;
-}
-
-.product-name{
-	font-size: 50px;
-	padding : 10px;
-	margin-top : 20px;
-}
-
-#products span{
-    /* padding : 10px; */
-    color: rgb(38, 202, 231);
-}
-.list-companies .card:hover{
-	background-color: #000;
-	color : #fff;
-	cursor : pointer;
-	margin-right: 0;
-
-	}
-.list-companies{
-	font-size: 50px
-}
-
-.ctext{
-	position : relative;
-    font-size : 30px;
-    margin-top: 40px;
-	
-	
-}
-.ctext:after{
-	content: "";
-	position : absolute;
-	border-top : 5px solid;
-	background-color: #f3f3f3;
-	height : 0px;
-	bottom : -10px;
-	left : 45%;
-    width : 10%;
-}
-
-.btn-info:hover {
-    background-color: gray !important;
-    border-color: black;
-}
-
-#products span .product-color {
-    padding: 0 !important;
-}
-
-center {
-    margin-bottom: 60px;
-}
-
-@media screen and (max-width : 768px){
-	#products p.tagline{
-	font-size : 30px;
-	font-weight : bold;
-    color : rgb(219, 217, 217);
-}
-
-#products span.tagUnder {
-	font-size: 15px;
-	padding: 10px;
-    color : rgb(38, 202, 231);
-
-}
-.single-product{
-    background : #FFF;
-  color : black !important;
-  padding : 10px;
-  text-align: center;
-    }
+@media screen and (max-width : 767px){
     
-    .product-text{
-    font-size: 20px;
-    text-align : justify-content;
-     overflow-wrap: break-word;
-    color : black !important;    
+    #products{
+    
+    padding : 13px 20px 13px 20px;
+
+    text-align : center; 
+    background-size : cover;
+    
+        font-size : 20px;
+
+}
+#products h1{
+    font-weight: bod;
+    font-size: 36px;
+    line-height: 39px;
+    color: #1F1F1F;
+}
+.product-section-card{
+    border:1px solid rgba(0,0,0,.125);
+    height: 200px;
+    border-radius : 5px;
+
+   }
+
+.product-section-card p{
+    width: 485px;
+height: 90px;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+color: #1F1F1F;
+opacity: 0.7;
+}
+#product_1{
+     margin-top : 2px;
+         
+}
+
+#product_2{
+     margin-top : 2px;
+     box-sizing: border-box;
+}
+
+.p_see_all{
+    
+background: #FFFFFF;
+width : 150px;
+padding : 7px;
+
+margin-left : 28%;
+border: 0.3px solid #9E9E9E;
+box-sizing: border-box;
+box-shadow: 2px 4px 10px rgba(0, 0, 9, 0.25);
+border-radius: 2px;
 }
 
 }
-@media screen and (min-width : 769px){
-	#products p.tagline{
-		font-weight : bold;
-	font-size : 30px;
-    color : rgb(219, 217, 217);
-}
 
-.single-product{
-        
-	padding: 10px;
-	margin-left : 10%;
-	margin-right : 10%;
-	background : #FFF;
-  color : black;
-  text-align: center;
 
-}
-.product-text{
-    font-size: 25px;
-    text-align : center;
-     overflow-wrap: break-word;
-     margin-left : 12%;
-     margin-right : 12%;
-    color : black !important; 
-} 
+@media screen and (min-width : 767px){
+    #products{
+    
+    padding : 13px 20px 13px 20px;
 
-#products span.tagUnder {
-	font-size: 26px;
-	padding: 10px;
-	font-weight : 400px;
-    color : rgb(38, 202, 231);
-
-}
-
-}
-
-/*************** SCROLL ANIMATE ******************/
-.scrollAnimate
-{
-    opacity:0;
-}
-/**************** COMPANY OVERLAY CSS ********************/
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay*/   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  
-  width: 100%; /* 100% width */
-  margin-top : 40px;
-  color : white;
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* For slides */
-.rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    }
-  
-  .rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-    }
-  
-  .rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
-    }
-  
-  .rslides img {
-    display: block;
-    height: auto;
-    float: left;
-    width: 100%;
-    border: 0;
-    }
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 200%}
-  .overlay .closebtn {
-    font-size: 100px;
-    top: 15px;
-    right: 35px;
-
-  }
-
-}
-
-.blinking{
-    animation:blinkingText 1.2s infinite;
-}
-
-@keyframes blinkingText{
-    0%{     color: red;    }
-    49%{    color: red; }
-    60%{    color: #000; }
-    99%{    color:#000;  }
-    100%{   color: red;    }
-}
-#company_name,#company_description{
-    color : white;
-}
-.company-intro{
-	background-color: #1d1d1f;
-	padding : 20px;
-	color : white;
-	text-align: center;
-	
-}
-.company-intro p{
-	font-size: 60px !important;
-
-}
-.companies p{
+    text-align : center; 
+    background-size : cover;
+    margin-left : 10%;
+    margin-right : 10%;
     font-size : 20px;
-    text-align: center;
+
+}
+#products h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 39px;
+    color: #1F1F1F;
+}
+.product-section-card{
+    border:1px solid rgba(0,0,0,.125);
+    height: 200px;
+    border-radius : 5px;
+
+   }
+
+.product-section-card p{
+    width: 485px;
+height: 90px;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+color: #1F1F1F;
+opacity: 0.7;
+}
+#product_1{
+     margin-right : 13%;
+         
 }
 
+#product_2{
+     margin-left : 15%;
+     box-sizing: border-box;
+}
+.see_all_cont{
+    position : relative;
+    margin-left : 10%;
+    margin-right : 10%;
+}
+.p_see_all{
+    position: absolute;
+background: #FFFFFF;
+width : 150px;
+padding : 7px;
+
+margin-left : 42%;
+border: 0.3px solid #9E9E9E;
+box-sizing: border-box;
+box-shadow: 2px 4px 10px rgba(0, 0, 9, 0.25);
+border-radius: 2px;
+}
+
+
+}
+.portfolio-content{
+    position: relative;
+    top : 40%;
+}
+/* OUR COMPANIES */
+.companies{
+    margin : 0 10%;
+}
+.company-container{
+    border:1px solid rgba(0,0,0,.125);
+    height: 200px;
+    border-radius : 5px;
+    text-align : center;
+}
+.company-container:hover{
+    background-color: #020D2C;
+    cursor : pointer;
+
+}
 
 /* footer */
 
