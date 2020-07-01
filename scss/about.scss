@@ -1,0 +1,206 @@
+@import 'utilities';
+
+
+.about-top {
+
+    .about-text {
+        padding: 20px 0;
+
+        
+        line-height: 2.3rem;
+
+        &>br {
+            height: 40px;
+        }
+
+        .text-span {
+            
+            &:last-child {
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+
+.features-cover {
+    width: 100%;
+
+
+    .feature {
+        @include centerize();
+        flex-wrap: nowrap;
+        .text-cover {
+            flex-grow: 1;
+            @include text-smaller();
+            line-height: $line-height;
+            @include givePad(left, 100px);
+
+            &.first {
+                @include givePad(right, 100px);
+                padding-left: 40px;
+            }
+
+
+            .feature-text {
+                font-weight: 300;
+                margin-top: 8px;
+            }
+        }
+
+        .feature-img {
+            width: 100%;
+            height: 100%;
+            padding: 0 0 0 20px;
+
+            &>img {
+                // width: 100%;
+            }
+        }
+    }
+}
+
+.team-parent {
+    width: 100%;
+
+    .team-header {
+        padding-top: 80px;
+    }
+
+    .team-cover {
+        width: 100%;
+        padding: 0 0 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        height: 100vh;
+    
+        .img-square {
+            
+            padding: 20px;
+            @include centerize();
+            flex-direction: column;
+    
+            &>.img-cover {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+    ;
+            }
+    
+            &:nth-child(1) > .img-cover {
+                background: url('../img/ceo.jpeg');
+                background-size: cover;
+                background-position-x: 50%;
+                background-position-y: 0;
+            }
+            &:nth-child(2) > .img-cover {
+                background: url('../img/pr.jpeg');
+                background-size: cover;
+                background-position-x: 50%;
+            }
+            &:nth-child(3) > .img-cover {
+                background: url('../img/hoteam.jpeg');
+                background-size: cover;
+                background-position-x: 50%;
+            }
+            &:nth-child(4) > .img-cover {
+                background: url('../img/business.jpeg');
+                background-size: cover;
+                background-position-x: 50%
+            }
+            &:nth-child(5) > .img-cover {
+                background: url('../img/marketing.jpeg');
+                background-size: cover;
+                background-position-x: 50%
+            }
+            &:nth-child(6) > .img-cover {
+                background: url('../img/visionary.jpeg');
+                background-size: cover;
+                background-position-x: 50%
+            }
+            
+            .description {
+                width: 100%;
+                text-align: center;
+                .name {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: rgba(0, 0, 0, .9);
+                    margin-bottom: 10px;
+                }
+    
+                .position {
+                    font-size: 20px;
+                    color: rgba(0, 0, 0, .7);
+                }
+            }
+        }
+    }
+    
+}
+
+.features-cover-mobile {
+    display: none;
+
+    .feature-img {
+        transform: scale(0.6);
+    }
+    .feature-text {
+        color: rgba(0, 0, 0, .7);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .features-cover-mobile {
+        display: block;
+    }
+    .about-top {
+        .about-text {
+            line-height: normal;
+            color: rgba(0, 0, 0, .7);
+        }
+    }
+
+    .features-cover {
+        display: none;
+        .feature {
+
+            .text-cover.first {
+                font-size: 13px;
+                padding: 0;
+            }
+            .feature-img {
+                width: 0;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    
+    .team-parent {
+        .header-cover {
+            padding-top: 30px; 
+        }
+        .team-cover {
+            display: flex !important;
+            flex-wrap: wrap;
+    
+            .img-square {
+                width: 100%;
+    
+                .img-cover {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+            }
+    
+            .name {
+                font-size: 18px !important;
+            }
+            .position {
+                font-size: 15px !important;
+            }
+        }
+    }
+
+}
