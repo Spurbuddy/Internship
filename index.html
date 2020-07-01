@@ -13,9 +13,11 @@
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
     <!--animation-->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-  
-	<!-- Maps -->
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<!-- what we do css -->
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<!-- Maps -->
 
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,35 +85,70 @@
 		
 		 <!--START OF WHAT WE DO SECTION-->
 		<section id="what-we-do">
-		<section id="tabs" class="what-we-do">
-			<div class="container-fluid">
-				<h6 class="section-title my-title h1">WHAT WE DO</h6>
-				<div class="row" id="row-container">
-					<div class="col-xs-12 ">
-						<nav>
-							<div class="nav nav-tabs nav-header nav-fill" id="nav-tab" role="tablist">
-								<a class="nav-item nav-link active" id="nav-start-up-tab" data-toggle="tab" href="#nav-start-up" role="tab" aria-controls="nav-start-up" aria-selected="true">Start-up</a>
-								<a class="nav-item nav-link" id="nav-innovation-tab" data-toggle="tab" href="#nav-innovation" role="tab" aria-controls="nav-innovation" aria-selected="false">Corporate innovation</a>
-							</div>
-						</nav>
-						<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-							<div class="tab-pane fade show active" id="nav-start-up" role="tabpanel" aria-labelledby="nav-start-up-tab">
-								we help in leveraging technologies and capitals to build digital ecosystems in high growth
-								sectors by developing customer-centric and
-								value-added services for African customers, enabling African SMEs to scale their enterprises,
-								while creating jobs and empowerment opportunities for everyone.
-							</div>
-							<div class="tab-pane fade" id="nav-innovation" role="tabpanel" aria-labelledby="nav-innovation-tab">
-								we assist organizations to sustain growth and business improvements over a continuous and consistent basis.
-								we also build  new product, feature, operational process or a business model.
-								with the help of our creative workers we execute
-								execute creativity and optimize business processes.
-							</div>
+			<div class="row container" style="display:flex; margin-left:auto; margin-right:auto">
+				<h2 class="my-5" style="display:flex;margin-left:auto; margin-right:auto">WHAT WE DO</h2>
+			</div>
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+				  <li data-target="#demo" data-slide-to="0" class="active"></li>
+				  <li data-target="#demo" data-slide-to="1"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+				   <div class="container ">
+					   <div class="row" style="display:flex; margin-left:auto; margin-right:auto">
+					   <div class="col-md-6 py-5">
+						   <img src="img/STARTUP.png"  class="roll" alt="">
+					   </div>
+					   <div class="col-md-6 py-5">
+						  <h5 class="pad">START-UP</h5>
+						  <h6 class="lead">We help in leveraging technologies and <br>capitals to build digital ecosystems in high <br>
+							  growth sectos by developing <br>customer-centric and value-added<br> services for African customers, enabling<br>
+							  African SMEs to scale their enterprises,<br> while creating jobs and empowerment opportunities for everyone.
+						  </h6>
+						  <button type="button" class="btn-lg  text-center btn-large-red">Learn More <img src="img/Icon awesome-arrow-alt-circle-down.png" alt=""></button>
+
+					   </div>
+					   </div>
+				   </div>
+				  </div>
+				 <div class="carousel-item">
+					<div class="container">
+						<div class="row">
+						<div class="col-md-6 py-5">
+							<img src="img/Vector.png"  class="roll" alt="">
+						</div>
+						<div class="col-md-6 py-5">
+							<div class="section2">
+						   <h5 class="pad">Corporate Innovations</h5>
+						   <h6 class="lead">We assist organization to sustain growth<br>and business improvements over a<br> continuious and consistent basis.
+							   We also <br>build new product, feature, operational<br> process or a business model. With the help<br> of our creative workers
+							   we execute<br> creativity and optimised business processes.
+						   </h6>
+						   <button type="button" class="btn-lg  text-center btn-large-red">Learn More <img src="img/Icon awesome-arrow-alt-circle-down.png" alt=""></button>
+						</div>
+						</div>
 						</div>
 					</div>
+				 </div>
+				</div>
+
+
+				<!-- Left and right controls -->
+				<div class="controls">
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				  <span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+				  <span class="carousel-control-next-icon"></span>
+				</a>
 				</div>
 			</div>
-		</section>
+
 		</section>
 		
 		 <!--END OF WHAT WE DO SECTION-->
@@ -343,6 +380,12 @@ BY JOSHUA KENNON Updated June 25, 2019
   });
 
 </script>
-
+	<!--what we do -->
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
 </body>
 </html>
