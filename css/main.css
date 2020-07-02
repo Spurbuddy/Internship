@@ -428,6 +428,7 @@ border-radius: 2px;
 .contact-info p:last-child {
     margin-bottom: 0; }
 .footer-area {
+    margin-top : 20px;
     position: relative;
     z-index: 1;
     background-color: #ffffff; }
@@ -493,3 +494,25 @@ border-radius: 2px;
             
             
 
+
+
+/* Our Stories */
+#our_stories h2{
+    padding :15px;
+    text-align: center;
+
+}
+#the_stories{
+padding :40px;
+background: #FFFFFF;
+border: 1px solid #6DB847;
+box-sizing: border-box;
+margin-left : 10%;
+margin-right : 10%;
+}
+#the_stories p{
+    
+    font-weight: 300;
+font-size: 17px;
+line-height: 36px;
+}
