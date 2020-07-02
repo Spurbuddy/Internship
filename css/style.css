@@ -1,0 +1,40 @@
+.pad {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: start;
+}
+.pads {
+    font-size: 26px;
+    text-align: start;
+}
+.roll {
+    
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+.carousel-indicators {
+    filter: invert(1);
+}
+@media only screen and (max-width: 1024px){
+    .roll {
+        width: 100%;
+    }
+    
+  
+@media only screen and (width: 1024px){
+   
+     
+.controls {
+    display: none;
+   }
+  
+}
+@media only screen and (width: 768px){
+  
+.controls {
+ display: none;
+}
+  
+}
