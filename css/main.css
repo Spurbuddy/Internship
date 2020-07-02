@@ -319,12 +319,20 @@ box-sizing: border-box;
 box-shadow: 2px 4px 10px rgba(0, 0, 9, 0.25);
 border-radius: 2px;
 }
+.p_see_all a{
+    color : black;
+}
 
 }
 
 
+
 @media screen and (min-width : 767px){
+    .p_see_all a{
+    color : black;
+}
     #products{
+
     
     padding : 13px 20px 13px 20px;
 
