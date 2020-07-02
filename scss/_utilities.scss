@@ -1,26 +1,113 @@
-@mixin centerize() {
+$padding: 100px;
+$line-height: 2.3rem;
+$secondary-color: #6DB847;
+$mobile-fontsize: 15px;
+$mainColor: #020D2C;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+@mixin centerize {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.center-span {
-    text-align: center;
+@mixin text-smaller() {
+    font-size: 20px;
 }
 
-.thick {
-    font-weight: 900;
+@mixin givePad($pad, $val) {
+    padding-#{$pad}: $val;
 }
 
-#marker {
-    background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
+.about-container {
+    width: 100%;
+    padding: 80px $padding;
 }
-     
-.mapboxgl-popup {
-    max-width: 200px;
+
+.text-span {
+    font-size: 24px;
 }
+
+
+.bold {
+    font-weight: 700;
+}
+
+.large {
+    font-size: 25px;
+}
+
+.secondary {
+    color: $secondary-color;
+}
+
+.header-cover {
+    padding: 0 20px;
+    @include centerize();
+
+    &>h2 {
+        margin-top: 0;
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+.feature-header {
+    color: $secondary-color;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 0;
+    // line-height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        padding: 40px 20px;
+    }
+    .text-span {
+        font-size: 18px;
+        // text-align: center;
+    }
+    .large {
+        font-size: 17px;
+    }
+    .header-cover {
+        & > h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+// $imgsquare: (
+//     '.img-square:nth-child(1)',
+//     '.img-square:nth-child(2)',
+//     '.img-square:nth-child(3)',
+//     '.img-square:nth-child(4)',
+//     '.img-square:nth-child(5)',
+//     '.img-square:nth-child(6)',
+// );
+
+// $imgs: (
+//     '../src/imgs/business.jpeg',
+//     '../src/imgs/ceo.jpeg',
+//     '../src/imgs/pr.jpeg'
+// );
+
+// @each $imgsquare in $imgs {
+//     #{img} > .img-cover {
+
+//     }
+// }

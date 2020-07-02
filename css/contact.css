@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.about-container {
+  width: 100%;
+  padding: 80px 100px;
+}
+
+.text-span {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.large {
+  font-size: 25px;
+}
+
+.secondary {
+  color: #6DB847;
+}
+
+.header-cover {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cover > h2 {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.feature-header {
+  color: #6DB847;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+  .text-span {
+    font-size: 18px;
+  }
+  .large {
+    font-size: 17px;
+  }
+  .header-cover > h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.about-container.colored {
+  background: rgba(109, 184, 71, 0.05);
+}
+
+.contact-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-top > h1 {
+  font-size: 37px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.contact-top .text-span {
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 100px;
+}
+
+.contact-form > input {
+  width: 100%;
+  height: 80px;
+}
+
+.contact-form > input, .contact-form > textarea {
+  margin-bottom: 50px;
+  outline: none;
+  border: 1px solid rgba(8, 5, 5, 0.6);
+  font-size: 20px;
+  padding-left: 20px;
+  font-family: 'Muli', sans-serif;
+}
+
+.contact-form > input::placeholder, .contact-form > textarea::placeholder {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form > .submit {
+  padding: 25px 50px;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  background: white;
+  border: 0.3px solid #525252;
+  box-shadow: 0 0 5px rgba(0, 0, 9, 0.2);
+  transition: background 200ms ease-out;
+  outline: none;
+}
+
+.contact-form > .submit:active, .contact-form > .submit:hover {
+  transition: background 200ms ease-in;
+  background: #020D2C;
+  color: #fff;
+}
+
+.contact-form > textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+.reach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reach .reach-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  padding: 20px;
+}
+
+.reach .reach-part:nth-child(1) > p {
+  color: #6DB847;
+  font-size: 20px;
+}
+
+.reach .reach-part:nth-child(2) {
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.reach .reach-part:nth-child(2) p:last-child {
+  margin-top: 0;
+}
+
+.reach .reach-part:last-child .socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.reach .reach-part:last-child .socials-container .social {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.reach .reach-part:last-child .socials-container .social:nth-child(2) {
+  margin: 0 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container.colored {
+    background: white;
+  }
+  .contact-form {
+    padding: 0;
+  }
+  .contact-form > input {
+    height: 40px;
+  }
+  .contact-form > input, .contact-form > textarea {
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding: 10px;
+    background: rgba(158, 158, 158, 0.15);
+    transition: 300ms ease-out;
+  }
+  .contact-form > input:focus, .contact-form > textarea:focus {
+    background: white;
+    font-weight: 600;
+    transition: 300ms ease-in;
+  }
+  .contact-form > .submit {
+    transform: scale(0.6);
+  }
+  .reach {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .reach .reach-part {
+    height: 100px;
+    font-size: 15px;
+    padding: 0;
+  }
+  .reach .reach-part:first-child {
+    height: 30px;
+  }
+  .reach .reach-part:last-child {
+    margin: auto;
+  }
+  .reach .reach-part:last-child > p {
+    display: none;
+  }
+  .contact-top h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

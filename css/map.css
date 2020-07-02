@@ -1,28 +1,73 @@
-.center-span {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.thick {
-  font-weight: 900;
+body {
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-#marker {
-  background-image: url("https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
+.about-container {
+  width: 100%;
+  padding: 80px 100px;
 }
 
-.mapboxgl-popup {
-  max-width: 200px;
+.text-span {
+  font-size: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.large {
+  font-size: 25px;
+}
+
+.secondary {
+  color: #6DB847;
+}
+
+.header-cover {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cover > h2 {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.feature-header {
+  color: #6DB847;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+  .text-span {
+    font-size: 18px;
+  }
+  .large {
+    font-size: 17px;
+  }
+  .header-cover > h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 #map_container {
   width: 100%;
-  height: 720px;
-  padding: 50px;
+  padding: 50px 100px;
   background: #fff;
 }
 
@@ -39,15 +84,188 @@
 }
 
 #map_container #map {
-  height: 500px;
+  position: relative;
+}
+
+#map_container #map > img {
+  width: 100%;
+  height: inherit;
+}
+
+#map_container #map .hotspot {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 4;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: transform 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map_container #map .hotspot:hover {
+  transform: scale(1.1);
+}
+
+#map_container #map .hotspot#hotspot-one {
+  top: 20%;
+  left: 20%;
+}
+
+#map_container #map .hotspot#hotspot-two {
+  top: 40%;
+  left: 30%;
+}
+
+#map_container #map .hotspot#hotspot-three {
+  top: 10%;
+  left: 50%;
+}
+
+#map_container #map .hotspot .hotspot-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map_container #map .hotspot .hotspot-cover:hover > .info, #map_container #map .hotspot .hotspot-cover:active > .info {
+  visibility: visible;
+}
+
+#map_container #map .hotspot .hotspot-cover > .hotspot-animator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  animation-name: spread-continuous;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#map_container #map .hotspot .hotspot-cover > .hotspot-animator > .small-circle {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+}
+
+#map_container #map .hotspot .hotspot-cover > .info {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  top: -115px;
+  visibility: hidden;
+  padding: 6px;
+}
+
+#map_container #map .hotspot .hotspot-cover > .info > .info-span {
+  font-size: 13px;
+  color: #fff;
+  line-height: 0.7 !important;
+}
+
+.teller {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  visibility: hidden;
+  padding: 0 50px;
+}
+
+.teller.show {
+  visibility: visible;
+}
+
+.teller .xtop {
+  z-index: 11;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px 3px;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teller .xtop #mobile-closer {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.teller .xtop #mobile-closer > i {
+  color: #fff !important;
+  font-size: 18px;
+}
+
+.teller .text {
+  padding: 5px 20px 12px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teller .text span#text {
+  color: #fff;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
+  .teller {
+    display: flex;
+  }
   #map_container {
     padding: 50px 20px;
-    height: 500px;
   }
   #map_container #map {
-    height: 250px;
+    padding: 0;
+  }
+  #map_container #map .hotspot {
+    height: 33.33333px;
+    width: 33.33333px;
+  }
+  #map_container #map .hotspot .small-circle {
+    width: 10px;
+    height: 10px;
+  }
+  #map_container #map .hotspot .info {
+    display: none;
+  }
+  @keyframes spread-continuous {
+    from {
+      width: 60%;
+      height: 60%;
+    }
+    to {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
