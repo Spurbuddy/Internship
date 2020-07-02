@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 
 
@@ -13,66 +12,116 @@
 }
 
 /**************** NAV-HEADER ********************/
-
-/* Navbar color change when scrolling */
-.navbar-light {
-    background: transparent;
-}
-
-.navbar-light.scrolled {
-    transition: 500ms ease;
-    background: black;
-}
-/* --- */
-
-nav {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.navbar-nav a {
-    /* font-family: poppins; */
-    font-size: 18px;
+.navbar-nav .nav-link{
+    font-size: 20px;
+    line-height: 30px;
     text-transform: capitalize;
 }
+
+.container-xl{
+    background: #020D2C; 
+    padding: 0 !important;
+    height: 68px;
+}
+
+.navbar {
+    box-shadow: 0px 4px 5px rgba(255, 255, 255, 0.1);
+}
+
 
 .navbar-light .navbar-brand {
     color: #fff;
+    position: absolute;
+    width: 70px;
+    height: 36px;
+    left: 120px;
+    font-family: Arista 2.0;
+    font-style: normal;
+    font-weight: normal;
     font-size: 25px;
-    text-transform: capitalize;
-    padding-top: .6rem;
-    letter-spacing: 2px;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-nav .active .nav-link {
+    border-bottom: 7px solid white;
+    border-radius: 5px;
+    padding-bottom: 15px;
     color: white;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #fff;
+ .navbar-light .navbar-nav .nav-link:focus {
+    border-bottom: 7px solid white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    color: white;
 }
+
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(38, 202, 231);
-}
-
-.navbar-nav {
-    text-align: center;
-    
+    display: inline;
 }
 
 .nav-item {
     padding: .6rem 0 .6rem 1rem;
 }
 
-/* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff !important;
-} */
+.navbar-light .navbar-nav .nav-link:visited {
+    color: white;
+    border-bottom: 7px solid white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
 
-.w-100 {
+.navbar-nav {
+    text-align: center;  
+}
+
+#header {
+    background: #020D2C;
+    margin-bottom: 40px;
+    /* padding-bottom: 100px; */
+    /* height: 60px; */
+}
+
+.content {
+    /* width: 679px; */
+    height: 180px;
+    left: 30px;
+    padding-top: 150px;
+    font-weight: normal;
+}
+.content h2 {
+    color: white;
+    font-size: 30px;
+    line-height: 60px; 
+    text-transform: capitalize;
+}
+
+.header-span-color {
+    color: #6DB847;
+    font-weight: bold;
+}
+
+.ill {
+    padding: 30px 0 100px 100px;
+    text-align: center;
+}
+
+.btn {
+    height: 72px;
+    width: 220px;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 10px 0 0;
+}
+/**************** END OF NAV-HEADER ********************/
+
+/* .w-100 {
     height: 100vh;
 }
 
@@ -104,7 +153,6 @@ nav {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
-    /* letter-spacing: 2px; */
 }
 
 .image-text p {
@@ -138,14 +186,6 @@ nav {
         margin: 0 30px 0 0;
     }
 
-    .navbar-toggler-icon {
-        /* margin-right: 30px; */
-    }
-
-    /* .container-nav {
-        margin: 0;
-    } */
-
     .image-text {
         display: flex;
         flex-direction: column;
@@ -165,7 +205,7 @@ nav {
         margin: 0 12%;
         
     }
-}
+} */
 /**************** END OF NAV-HEADER ********************/
 
 /**************** WHAT WE DO ********************/
