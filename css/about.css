@@ -139,11 +139,16 @@ a:active {
 }
 
 .team-parent .team-cover .img-square {
-  padding: 20px;
+  transition: 200ms ease-out;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.team-parent .team-cover .img-square:hover {
+  transform: scale(1.2);
 }
 
 .team-parent .team-cover .img-square > .img-cover {
