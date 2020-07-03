@@ -561,6 +561,7 @@ line-height: 30px;
 
 text-align: center;
 text-transform: uppercase;
+z-index : 1 !important;
 
 /* #FFFFFF */
 

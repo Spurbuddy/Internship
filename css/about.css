@@ -10,7 +10,7 @@ body {
 
 .about-container {
   width: 100%;
-  padding: 80px 100px;
+  padding: 80px 120px;
 }
 
 .text-span {
@@ -47,6 +47,15 @@ body {
   font-weight: bold;
   font-style: normal;
   margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none;
+  background: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -130,11 +139,16 @@ body {
 }
 
 .team-parent .team-cover .img-square {
-  padding: 20px;
+  transition: 200ms ease-out;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.team-parent .team-cover .img-square:hover {
+  transform: scale(1.2);
 }
 
 .team-parent .team-cover .img-square > .img-cover {
