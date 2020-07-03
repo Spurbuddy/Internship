@@ -76,8 +76,12 @@
         height: 100vh;
     
         .img-square {
-            
-            padding: 20px;
+            transition: 200ms ease-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            padding: 40px;
             @include centerize();
             flex-direction: column;
     

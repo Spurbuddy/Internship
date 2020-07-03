@@ -1,4 +1,4 @@
-$padding: 100px;
+$padding: 120px;
 $line-height: 2.3rem;
 $secondary-color: #6DB847;
 $mobile-fontsize: 15px;
@@ -68,6 +68,15 @@ body {
     font-style: normal;
     margin-bottom: 0;
     // line-height: 40px;
+}
+
+a {
+    text-decoration: none !important;
+    
+    &:active {
+        text-decoration: none;
+        background: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
