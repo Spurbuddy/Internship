@@ -31,7 +31,7 @@
 
 .navbar-light .navbar-brand {
     color: #fff;
-    position: absolute;
+    position: relative;
     width: 70px;
     height: 36px;
     left: 120px;
@@ -39,6 +39,10 @@
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
 }
 
 .navbar-light .navbar-nav .active .nav-link {
@@ -104,10 +108,15 @@
 
 .ill {
     padding: 30px 0 100px 100px;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.btn {
+.ill video {
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
+#btn {
     height: 72px;
     width: 220px;
     margin-top: 30px;
@@ -119,93 +128,100 @@
     text-transform: uppercase;
     padding: 0 10px 0 0;
 }
-/**************** END OF NAV-HEADER ********************/
 
-/* .w-100 {
+.w-100 {
     height: 100vh;
 }
+.navbar-light .navbar-toggler-icon { 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-
-.image-div {
-    position: relative;
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center scroll;
-    -webkit-background-size: cover  ;
-    background-size: cover;
-}
-
-.image-text {
-    position: absolute;
-	top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #838181;
-    margin: 0;
-}
-
-.image-text h2 {
-    width: 80%;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.image-text p {
-    font-size: 18px;
-    line-height: 1.9;
-    font-style: italic;
-}
-
-.txt-rotate {
-    color: rgb(38, 202, 231);
-    font-weight: bolder;
-}
 
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 80% !important;
-    }
     .navbar-nav.ml-auto {
-        background: rgba(0, 0, 0);
+        background: #020D2C;
     }
 
     .navbar {
         padding: 8px 0 8px 15px;
         overflow-x: hidden;
     }
+
     .navbar-toggler {
         padding: 1px 5px;
         font-size: 18px;
         line-height: 0.3;
-        background: #fff;
         margin: 0 30px 0 0;
+       
     }
 
-    .image-text {
+    .navbar-light .navbar-brand {
+        left: 10px;
+        font-size: 18px;
+    }
+
+    .ill {
+        padding: 30px 0 0 30px;
+    }
+
+    .ill video {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .content {
+        padding-top: 40px;
+        left: 10px;
+        font-weight: 300;
+    }
+
+    .content h2 {
+        font-size: 16px;
+        line-height: 35px;
+        width:120%;
+    }
+
+    .row {
         display: flex;
-        flex-direction: column;
-        left: 50%;
-        width: 100%;
-        text-align: center;
-
-    }
-    .image-text h2 {
-        font-size: 25px;
-        margin: 0 12%;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
     }
 
-    .image-text p {
-        width: 80%;
+    #btn {
+        height: 40px;
+        width: 120px;
+        margin-top: 10px;
+        background-color: white;
+        color: black;
         text-align: center;
-        margin: 0 12%;
-        
+        font-weight: 800;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 5px 0 0;
     }
-} */
+
+    .w-100 {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .w-100 {
+        height: 50vh;
+    }
+    .content {
+        padding-top: 30px;
+    }
+    .ill {
+        padding: 10px 0 0 20px;
+    }
+    .ill video {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .navbar-light .navbar-brand {
+        left: 10px;
+    }
+}
 /**************** END OF NAV-HEADER ********************/
 
 /**************** WHAT WE DO ********************/
