@@ -8,7 +8,11 @@
   font-family: 'Muli', sans-serif;
   margin: 0;
   padding: 0;
-	
+}
+
+@font-face {
+    font-family: "Arista 2.0";
+    src: url("/lib/Arista\ 2.0/Arista");
 }
 
 /**************** NAV-HEADER ********************/
@@ -35,7 +39,7 @@
     width: 70px;
     height: 36px;
     left: 120px;
-    font-family: Arista 2.0;
+    font-family: "Arista 2.0";
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -179,7 +183,7 @@
         width:120%;
     }
 
-    .row {
+    #header .container .row {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap !important;
