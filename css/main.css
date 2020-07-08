@@ -373,7 +373,6 @@ border-radius: 2px;
 .company-container:hover{
     background-color: #020D2C;
     cursor : pointer;
-
 }
 
 /* footer */
@@ -381,6 +380,10 @@ border-radius: 2px;
 #secondColumn{
     font-size: 14px;
 }
+.main-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+     }
 .footer-widget-nav {
     position: relative;
      }
