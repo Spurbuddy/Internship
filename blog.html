@@ -22,13 +22,14 @@
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link rel="stylesheet" href="css/map.css">
 
-	<title>Spurbuddy - Startup Studio | Blog</title>
+	<title>Spurbuddy - Startup Studio | Coporate Innovation</title>
 
 
 </head>
 <body>
+
 		
 	<div class="container-xl shadow-lg">
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -41,7 +42,7 @@
 			 
 			   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				 <ul class="navbar-nav ml-auto">
-				   <li class="nav-item active">
+				   <li class="nav-item">
 					 <a class="nav-link" href="./index.html">Home</a>
 				   </li>
 				   <li class="nav-item">
@@ -54,7 +55,7 @@
 					   <a class="nav-link" href="./innovation_lab.html">Innovation Lab</a>
 					 </li>
 					 <li class="nav-item">
-						<a class="nav-link" href="./blog.html">Blog</a>
+						<a class="nav-link active" href="./blog.html">Blog</a>
 					  </li>
 					 <li class="nav-item">
 					   <a class="nav-link" href="./contact.html">Contact Us</a>
@@ -67,31 +68,72 @@
 	   
 		 <!-- Header start -->
 		 
-            <section id="header">
-                <div class="container">
-                    
-                </div>
-            </section>
+		 <section id="header">
+			<div class="container">
+			  <div class="row w-100">
+				<div class="col-lg-6 content">
+					<h2>We are a <span class="header-span-color">Startup Engine,</span> We build <span class="header-span-color">global</span> companies with innovative partners</h2>
+					<a href=" #form-head"><button type="button" class="btn btn-primary" id="btn"><img src="img/Vector (1).png" alt="" style="width: 10px; height: 10px;"> Our Mission</button></a>
+				</div>
+				<div class="col-lg-6 ill">
+					<img id="gif" src="./img/ezgif.com-video-to-gif.gif" alt="header gif">
+				</div>
+			  </div>
+			</div>
+		  </section>
 	
-         <!--End of Header -->
-         
-         <section id="carousel">
-            <div class="slider">
-                <div class="slide active" style="background: red; width: 500px; margin: 1rem auto; height: 500px;"></div>
-                <div class="slide" style="background: orange; width: 500px; margin: 1rem auto; height: 500px;"></div>
-                <div class="slide" style="background: green; width: 500px; margin: 1rem auto; height: 500px;"></div>
-                <div class="slide" style="background: blue; width: 500px; margin: 1rem auto; height: 500px;"></div>
-                <div class="slide" style="background: grey; width: 500px; margin: 1rem auto; height: 500px;"></div>
-            </div>
-            <span class="logo">
-                <i class="fa fa-chevron-left" onclick="changeSlide('previous')" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" onclick="changeSlide('next')" aria-hidden="true"></i>
-            </span>
-         </section>
+		 <!--End of Header -->
+		
+		
+	
+	
+
+		
+		 <!--START OF WHAT WE DO SECTION-->
+		<section id="what-we-do" class="mt-5">
+			<div class="row container" style="display:flex; margin-left:auto; margin-right:auto">
+				<h2 class="my-5" style="display:flex;margin-left:auto; margin-right:auto">WHAT WE DO</h2>
+			</div>
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+				  <li data-target="#demo" data-slide-to="0" class="active"></li>
+				  <li data-target="#demo" data-slide-to="1"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+				  <div class="carousel-item active" style="width: 100%; height: 500px; background: rgb(10, 17, 46);">
+				   <div class="container ">
+					   <div style="width: 100%; height: 200px; background: cyan; margin: 1rem;"></div>
+					   <div style="width: 100%; height: 200px; background: rgb(178, 204, 33); margin: 1rem;"></div>
+				   </div>
+				  </div>
+				  <div class="carousel-item" style="width: 100%; height: 500px; background: rgb(10, 17, 46);">
+				   <div class="container ">
+					   <div style="width: 100%; height: 200px; background: magenta; margin: 1rem;"></div>
+					   <div style="width: 100%; height: 200px; background: white; margin: 1rem;"></div>
+				   </div>
+				  </div>
+
+				<!-- Left and right controls -->
+				<div class="controls">
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				  <span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+				  <span class="carousel-control-next-icon"></span>
+				</a>
+				</div>
+			</div>
+
+		</section>
+		
+		 <!--END OF WHAT WE DO SECTION-->
 
 	<footer id="footer">
-        <!-- foote
-            r area -->
+		<!-- footer area -->
 		 <!-- ##### Footer Area Start ##### -->
 		 <footer class="footer-area">
 			<!-- Main Footer Area -->
@@ -171,27 +213,14 @@
 			  </div>
 			</div>
 		 </footer>
-            <!-- footer ends here -->
-            
-<script>
+			<!-- footer ends here -->
 
-    setInterval(() => changeSlide('next'), 5000);
-    changeSlide = direction => {
-        const currentImg = $('.active');
-        const nextImg = currentImg.next();
-        const prevImg = currentImg.prev();
 
-        if (direction === 'next') {
-            nextImg.length ? nextImg.addClass('active') : 
-                $('.slider .slide').first().addClass('active') 
-        }else {
-            prevImg.length ? prevImg.addClass('active') :
-                $('.slider .slide').last().addClass('active');
-        }
-        currentImg.removeClass('active');
-    }
 
-</script>
+
+
+   
+<!-- Js file -->
    
 	   <!-- JavaScript Libraries -->
  <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> <script src="lib/jquery/jquery.min.js"></script> 
