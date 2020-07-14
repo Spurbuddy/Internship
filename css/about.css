@@ -61,9 +61,13 @@ a:active {
 @media only screen and (max-width: 768px) {
   .about-container {
     padding: 40px 20px;
+    font-size: 1em;
   }
   .text-span {
     font-size: 18px;
+  }
+  .about-text{
+    text-align: center;
   }
   .large {
     font-size: 17px;
@@ -123,79 +127,38 @@ a:active {
 
 .team-parent {
   width: 100%;
+  margin: 60px auto;
 }
 
-.team-parent .team-header {
-  padding-top: 80px;
+.header-cover{
+  width: 100%;
+  margin: auto auto;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .team-parent .team-cover {
   width: 100%;
-  padding: 0 0 20px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  height: 100vh;
-}
-
-.team-parent .team-cover .img-square {
-  transition: 200ms ease-out;
-  padding: 40px;
+  height: 100%;
+  margin: auto auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between; 
 }
 
-.team-parent .team-cover .img-square:hover {
-  transform: scale(1.2);
-}
-
-.team-parent .team-cover .img-square > .img-cover {
-  width: 250px;
-  height: 250px;
+.img-cover .round {
+  width: 280px;
+  height: 280px;
+  margin-top: 20px;
   border-radius: 50%;
 }
 
-.team-parent .team-cover .img-square:nth-child(1) > .img-cover {
-  background: url("../img/ceo.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 0;
-}
-
-.team-parent .team-cover .img-square:nth-child(2) > .img-cover {
-  background: url("../img/pr.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-}
-
-.team-parent .team-cover .img-square:nth-child(3) > .img-cover {
-  background: url("../img/hoteam.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-}
-
-.team-parent .team-cover .img-square:nth-child(4) > .img-cover {
-  background: url("../img/business.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-}
-
-.team-parent .team-cover .img-square:nth-child(5) > .img-cover {
-  background: url("../img/marketing.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-}
-
-.team-parent .team-cover .img-square:nth-child(6) > .img-cover {
-  background: url("../img/visionary.jpeg");
-  background-size: cover;
-  background-position-x: 50%;
-}
 
 .team-parent .team-cover .img-square .description {
   width: 100%;
+  margin: auto auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -203,6 +166,7 @@ a:active {
   font-size: 24px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.9);
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -223,9 +187,10 @@ a:active {
   color: rgba(0, 0, 0, 0.7);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 816px) {
   .features-cover-mobile {
     display: block;
+    text-align: center;
   }
   .about-top .about-text {
     line-height: normal;
@@ -244,22 +209,12 @@ a:active {
   }
   .team-parent .header-cover {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
   .team-parent .team-cover {
-    display: flex !important;
-    flex-wrap: wrap;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
   }
-  .team-parent .team-cover .img-square {
-    width: 100%;
-  }
-  .team-parent .team-cover .img-square .img-cover {
-    width: 150px !important;
-    height: 150px !important;
-  }
-  .team-parent .team-cover .name {
-    font-size: 18px !important;
-  }
-  .team-parent .team-cover .position {
-    font-size: 15px !important;
-  }
+  
 }
