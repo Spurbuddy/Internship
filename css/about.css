@@ -125,7 +125,7 @@ a:active {
   padding: 0 0 0 20px;
 }
 
-.team-parent {
+.team-parent{
   width: 100%;
   margin: 60px auto;
 }
@@ -151,7 +151,9 @@ a:active {
   height: 280px;
   margin-top: 20px;
   border-radius: 50%;
+  transition:  1.4s;
 }
+
 
 
 .team-parent .team-cover .img-square .description {
@@ -159,20 +161,17 @@ a:active {
   margin: auto auto;
   margin-top: 10px;
   margin-bottom: 10px;
+
   text-align: center;
+  margin: 30px auto 60px;
 }
 
-.team-parent .team-cover .img-square .description .name {
+.img-square .description .name{
   font-size: 24px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.9);
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.team-parent .team-cover .img-square .description .position {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .features-cover-mobile {
@@ -188,6 +187,7 @@ a:active {
 }
 
 @media only screen and (max-width: 816px) {
+
   .features-cover-mobile {
     display: block;
     text-align: center;
@@ -207,6 +207,7 @@ a:active {
     width: 0;
     line-height: 1.8rem;
   }
+
   .team-parent .header-cover {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -215,6 +216,7 @@ a:active {
       flex-flow: column wrap;
       justify-content: center;
       align-items: center;
+
   }
   
 }

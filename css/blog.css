@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  #header{
+      width: 100%;
+      height: 80vh;
+  }
+
+  nav .nav-link.active{
+      border-radius: 10px;
+      border-bottom: 5px solid white;
+      background: red;
+  }
+
+  #carousel{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+  #carousel .slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel .slide{
+    width: 80%;
+    height: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: -1500px;
+    transition: all 1s ease;
+}
+
+#carousel .slide.active{
+    right: 30%;
+    transition: all 1s ease;
+}
+
+#carousel .fa{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#carousel .fa-chevron-right{
+    left: 85%;
+}
+
+
+@media screen and (max-width: 768px){
+    #carousel .slide.active{
+        right: 10%;
+    }
+    #carousel .fa-chevron-left{
+        left: 1%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    #carousel .fa-chevron-right{
+        left: 80%;
+    }
+    #carousel .slide.active{
+        right: 7%;
+    }
+    
+}
+
