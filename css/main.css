@@ -229,6 +229,34 @@
 
 /**************** WHAT WE DO ********************/
 
+.lead{
+    font-size: 1em;
+}
+
+@media screen and (max-width:767px){
+
+    .section2{
+        width: 90%;
+        margin: auto auto;
+        text-align: center;
+    }
+    .pad{
+        text-align: center;
+    }
+    .img-slide{
+        width: 100%;
+        margin: auto auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .img-slide .roll{
+        width: 80%;
+        margin: auto auto;
+        height: 300px;
+    }
+
+}
 /**************** END OF WHAT WE DO ********************/
 
 
@@ -604,9 +632,9 @@ padding : 30px;
     margin-left : 8%;
 }
 
-#our_process{
+/* #our_process{
 
-}
+} */
 #our_process span{
     font-weight: bold;
 font-size: 20px;
