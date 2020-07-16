@@ -1,3 +1,4 @@
+
 .pad {
     font-weight: bolder;
     font-size: 1.5rem;
@@ -17,6 +18,18 @@
 .carousel-indicators {
     filter: invert(1);
 }
+#gif{
+    width: 100%;
+    height: auto;
+}
+nav .nav-item{
+    font-size: 10px;
+}
+nav .nav-link.active{
+    padding-bottom: 0.8rem;
+    border-radius: 5px;
+    border-bottom: 7px solid rgb(255, 255, 255);
+}
 @media only screen and (max-width: 1024px){
     .roll {
         width: 100%;
@@ -32,9 +45,7 @@
   
 }
 @media only screen and (width: 768px){
-  
+ 
 .controls {
  display: none;
-}
-  
 }
