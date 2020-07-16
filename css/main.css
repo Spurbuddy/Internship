@@ -14,6 +14,10 @@
     font-family: "Arista 2.0";
     src: url("/lib/Arista\ 2.0/Arista");
 }
+/*************** GENERAL STYLING ********/
+h1{
+    font-size: 32px;
+}
 
 /**************** NAV-HEADER ********************/
 .navbar-nav .nav-link{
@@ -590,6 +594,7 @@ font-size: 24px;
 line-height: 40px;
 text-align: center;
 color: #1F1F1F;
+height: 100% !important;
 }
 #your-benefits i{
     color : #6DB847;
