@@ -21,7 +21,7 @@ h1{
 
 /**************** NAV-HEADER ********************/
 .navbar-nav .nav-link{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     text-transform: capitalize;
 }
@@ -523,8 +523,8 @@ padding : 30px;
 } */
 #our_process span{
     font-weight: bold;
-font-size: 20px;
-line-height: 30px;
+font-size: 16px;
+line-height: 20px;
 
 text-align: center;
 text-transform: uppercase;
@@ -547,14 +547,12 @@ color: #6DB847;
 }
 #our_process p{
     width: 624px;
-height: 400px;
-
 
 font-family: Muli;
 font-style: normal;
 font-weight: normal;
-font-size: 20px;
-line-height: 50px;
+font-size: 16px;
+line-height: 40px;
 
 
 color: #525252;
@@ -568,21 +566,23 @@ color: #525252;
     font-size: 35px;
 }
 
+
+
 #your-benefits{
     background : #020D2C;
     text-align: center;
 }
 #your-benefits span{
     font-weight: 800;
-font-size: 20px;
-line-height: 30px;
+font-size: 16px;
+line-height: 20px;
 text-align: center;
 text-transform: uppercase;
 color: #6DB847;
 }
 #your-benefits h1{
     font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 line-height: 30px;
 text-align: center;
 color: #FFFFFF;
@@ -590,29 +590,31 @@ color: #FFFFFF;
 
 #your-benefits .card {
     font-weight: 500;
-font-size: 24px;
-line-height: 40px;
+font-size: 16px;
+line-height: 30px;
 text-align: center;
 color: #1F1F1F;
 height: 100% !important;
+
 }
 #your-benefits i{
     color : #6DB847;
 }
+@media screen and (min-width : 766px){
 #our-programmes{
     text-align : center;
 }
 #our-programmes span{
     font-weight: 800;
-font-size: 20px;
-line-height: 30px;
+font-size: 16px;
+line-height: 20px;
 text-align: center;
 text-transform: uppercase;
 color: #6DB847;
 }
 #our-programmes h1{
     font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 line-height: 30px;
 text-align: center;
 color: #1F1F1F;
@@ -624,8 +626,11 @@ color: #1F1F1F;
 }
 #our-programmes .card{
     background: #FFFFFF;
+    font-size: 16px;
 box-shadow: 0px 0px 20px rgba(2, 13, 44, 0.3);
 border-radius: 10px;
+height : 100%;
+overflow-x: none;
 }
 #our-programmes hr{
     margin-left : 30px;
@@ -634,7 +639,7 @@ border-radius: 10px;
 }
 #our-programmes .row h2{
 font-weight: bold;
-font-size: 36px;
+font-size: 30px;
 line-height: 40px;
 width : 345px;
 /* or 111% */
@@ -647,7 +652,7 @@ color: #1F1F1F;
 }
 #our-programmes .row p{
     font-weight: 600;
-font-size: 20px;
+font-size: 16px;
 line-height: 30px;
 
 display: flex;
@@ -655,6 +660,7 @@ align-items: center;
 text-align: center;
 color: #525252;
 width : 350px;
+}
 }
 
 #comp{
@@ -670,7 +676,7 @@ color: #6DB847;
 }
 #comp h1{
     font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 line-height: 30px;
 text-align: center;
 color: #1F1F1F;
