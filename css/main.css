@@ -682,6 +682,8 @@ color: #1F1F1F;
     background: #010b29;
     color: #fff;
     padding: 2rem;
+    height: 400px;
+    width: 100%;
 }
 #footer .footer{
     width: 90%;
@@ -692,7 +694,7 @@ color: #1F1F1F;
     align-items: flex-start;
 }
 #footer hr{
-    border-bottom: 2px solid rgb(112, 110, 110);
+    border-bottom: 2px solid rgb(160, 158, 158);
     width: 10%;
     margin: 0;
     margin-bottom: 1rem;
@@ -709,7 +711,7 @@ color: #1F1F1F;
     grid-column: span 3;
     width: 100%;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgb(112, 110, 110);
+    border-bottom: 1px solid rgb(160, 158, 158);
 }
 #footer a{
     color: inherit;
@@ -726,7 +728,7 @@ color: #1F1F1F;
 
 
 #footer .gray{
-    color: rgb(112, 110, 110);
+    color: rgb(160, 158, 158);
 }
 #footer .p{
     width: 100%;
