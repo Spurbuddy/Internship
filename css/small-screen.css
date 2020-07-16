@@ -1,0 +1,109 @@
+#header .content{
+    margin-top: 5rem;
+    font-size: 0.7rem;
+}
+#btn {
+    height: 62px;
+    width: 250px;
+    font-size: 1.2rem;
+}
+#footer .footer{
+    width: 100%;
+}
+#footer .top{
+    padding: 0;
+}
+
+@media screen and (max-width: 486px){
+    #header .content{
+        margin-top: 2rem;
+        width: 50%;
+        font-size: 0.5rem;
+        align-self: flex-start;
+        padding-right: 0.5rem;
+        z-index: 1;
+    }
+    #header .ill{
+        margin-top: 3rem;
+        width: 50%;
+        align-self: flex-start;
+    }
+    #btn {
+        height: 42px;
+        width: 130px;
+        font-size: 0.6rem;
+        padding: 0;
+    }
+    .fa-play{
+        font-size: 0.5rem;
+        width: 20px;
+        padding: 0.3rem 0.1rem;
+        padding-left: 0.3rem;
+        margin: 0;
+        margin-right: 0.3rem;
+    }
+    #our_stories{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    
+    }
+    #footer .footer{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.8rem;
+    }
+    #footer .reach{
+        display: none;
+    }
+    #footer .footer .third,
+    #footer .footer .second,
+    #footer .footer .first,
+    #footer .footer .top{
+        padding: 0;
+        margin: 0;
+    }
+    #footer .footer .top{
+        grid-column: span 1;
+        flex-direction: column;
+    }
+    #footer .footer .top .build{
+        color: white;
+        padding-right: 1rem;
+    }
+    #footer .footer .first{
+        grid-row: 2;
+    }
+    #footer .footer .first .blog{
+       margin-top: 1rem;
+       margin-left: 1rem;
+    }
+    #footer .footer .first div{
+        display: flex;
+    }
+    #footer .footer hr{
+        display: none;
+    }
+    #footer .footer .third a{
+        display: inline-block;
+    }
+    #footer .footer .second .li1{
+        margin-top: 0;
+    }
+    #footer .li1{
+        padding-right: 0rem;
+    }
+    #footer .p{
+        margin-bottom: 0.7rem;
+    }
+    #footer .third i{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        padding: 0.3rem 0.4rem;
+        border-radius: 50%;
+        border: 1px solid rgb(112, 110, 110);
+    }
+    #footer .one{
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
