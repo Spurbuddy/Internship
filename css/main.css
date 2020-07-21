@@ -20,6 +20,13 @@ h1{
 }
 
 /**************** NAV-HEADER ********************/
+.nav-container{
+    /* make header stick to top of page */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
 .navbar-nav .nav-link{
     font-size: 16px;
     line-height: 30px;
