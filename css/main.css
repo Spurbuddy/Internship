@@ -373,19 +373,18 @@ h1 {
 
 
 @media screen and (min-width : 767px) {
-    #products {
+    ##products {
 
         padding: 13px 20px 53px 20px;
 
         text-align: center;
         background-size: cover;
-        background-color: #020D2C;
+        background-color: #FFFFFF;
 
         height: 100%;
         font-size: 20px;
 
     }
-
     #products .row {
         margin-left: 10%;
         margin-right: 10%;
@@ -399,14 +398,13 @@ h1 {
         color: #1F1F1F;
     }
 
-    .product-section-card {
+   .product-section-card {
         border: 1px solid rgba(0, 0, 0, .125);
         height: 200px;
         border-radius: 5px;
-        background-color: #fff;
+        background-color: #020D2C;
 
     }
-
     .product-section-card p {
         width: 485px;
         height: 90px;
