@@ -231,11 +231,11 @@ h1 {
         max-width: 768px;
     }
 
-    .content h2 {
-        /* font-size: 16px;
+    /* .content h2 {
+        font-size: 16px;
         line-height: 35px;
-        width: 120%; */
-    }
+        width: 120%;
+    } */
 
     #header{
         /* resize header for smaller screens */
@@ -342,7 +342,7 @@ h1 {
 }
 
 /**************** END OF WHAT WE DO ********************/
-********* PRODUCTS *************/
+/********* PRODUCTS *************/
 @media screen and (max-width : 767px) {
 
     #products {
