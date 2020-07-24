@@ -22,6 +22,14 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 768px){
+    #gif{
+        max-width: 420px;
+    }
+}
+
+
 nav .nav-item{
     font-size: 10px;
 }
