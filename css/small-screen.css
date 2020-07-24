@@ -1,5 +1,5 @@
 #header .content{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     font-size: 0.7rem;
 }
 #btn {
@@ -16,18 +16,17 @@
 
 @media screen and (max-width: 486px){
     #header .content{
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         width: 50%;
         font-size: 0.5rem;
         align-self: flex-start;
         padding-right: 0.5rem;
         z-index: 1;
     }
-    #header .ill{
-        margin-top: 3rem;
-        width: 50%;
+    /* #header .ill{
+        margin: 3rem 0;
         align-self: flex-start;
-    }
+    } */
     #btn {
         height: 42px;
         width: 130px;
