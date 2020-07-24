@@ -8,6 +8,14 @@ body {
   margin: 0;
 }
 
+/* general styles */
+.abs-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .about-container {
   width: 100%;
   padding: 80px 120px;
@@ -145,12 +153,17 @@ a:active {
   justify-content: space-between; 
 }
 
-.img-cover .round {
-  width: 280px;
+.img-cover{
+  position: relative;
   height: 280px;
+  width: 280px;
   margin-top: 20px;
   border-radius: 50%;
-  transition:  1.4s;
+  overflow: hidden;
+}
+
+.img-cover .round {
+  width: 100%;
 }
 
 
